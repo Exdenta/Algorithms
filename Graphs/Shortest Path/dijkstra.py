@@ -21,7 +21,6 @@ def Dijkstra(nodes, edges, source):
     dist = np.array([inf] * len(nodes))
     dist[source] = 0
 
-    j = 0
     while not np.all(visited):
         # among unvisited nodes find the node
         # with minimal distance to the source
